@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Science Gothic";
+  src: url("fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Science Gothic", sans-serif;
+}
+
+.display {
+  background-color: rgb(211, 245, 161);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.display .registerwindow {
+  width: 40vw;
+  height: 50%;
+  background-color: rgb(223, 216, 154);
+  border-radius: 20px;
+  border: 5px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px black;
+}
+.display .registerwindow .logo1 {
+  width: 16vw;
+  height: 8vh;
+  border-radius: 14px;
+  border: 10px solid green;
+  background-image: url(images/MYMAX.SHOP.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.display .registerwindow button {
+  transition: 0.3s ease;
+  width: 20vw;
+  height: 3vh;
+  border-radius: 14px;
+  border: none;
+  text-align: center;
+  background-color: rgb(72, 85, 230);
+  color: bisque;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 0 20px black;
+}
+.display .registerwindow button:hover {
+  transform: scale(1.1);
+}
+.display .registerwindow button:active {
+  transition: 0.1s ease-in;
+  transform: scale(0.8);
+}
+
+#tel, #email, #name {
+  width: 20vw;
+  height: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gender {
+  margin-bottom: 20px;
+}
+
+.logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 40vh;
+  background-image: url(images/robot.png);
+  background-size: 150%;
+  position: fixed;
+  transform: translate(-35vw, 0vw);
+  animation: popup 1s ease, woble 1s ease 1s infinite;
+}
+
+@keyframes popup {
+  0% {
+    transform: translate(-35vw, 30vw) rotate(-9deg);
+  }
+  100% {
+    transform: translate(-35vw, 0vw) rotate(9deg);
+  }
+}
+@keyframes woble {
+  0% {
+    transform: translate(-35vw, 0vw) rotate(9deg);
+  }
+  50% {
+    transform: translate(-35vw, 0vw) rotate(-9deg);
+  }
+  100% {
+    transform: translate(-35vw, 0vw) rotate(9deg);
+  }
+}
+#cancel {
+  margin-left: 35vw;
+  background-color: rgb(170, 222, 222);
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .display .registerwindow {
+    width: 60vw;
+  }
+  #tel, #email, #name {
+    font-size: large;
+    width: 50vw;
+    height: 4vh;
+  }
+  .display .registerwindow .logo1 {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .display .registerwindow {
+    width: 100vw;
+    box-shadow: none;
+    border-color: chartreuse;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .display .registerwindow .logo1 {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 4096px) and (min-width: 1627px) {
+  #tel, #email, #name {
+    width: 30vw;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  * {
+    font-size: 30px;
+  }
+}
+label {
+  font-family: "Science Gothic", sans-serif;
+}/*# sourceMappingURL=signin.css.map */

@@ -1,0 +1,8 @@
+button{
+    width: 8vw;
+    height:4vh;
+    border-radius: 14px;
+    border: none;
+    background-color: aqua;
+    color: black;
+}

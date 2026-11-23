@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tophead {
+    width: 100%;
+    height: 11.111vh;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.logo1 {
+    border-radius: 0.875vw;
+    margin-left: -3.125vw;
+    margin-top: 2vh;
+    width: 30vw;
+    height: 8vh;
+    background-image: url(images/MYMAX.SHOP.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: idle 0.5s ease-in 1s 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125vw;
+}
+
+nav a {
+    font-family:"Open Sans", sans-serif;
+    text-decoration: none;
+    font-size: clamp(xx-small,30px,200px);
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.icons {
+    gap: 1.25vw;
+    display: flex;
+    margin-left: 6.25vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon1 {
+     font-family: "Shantell Sans", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 4.444vh;
+    background-color: black;
+    border-radius: 1.25vw;
+    box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.605);
+    transition: 0.3s ease;
+    
+}
+
+.icon1 a {
+     font-size: clamp(3px,20px,200px);
+    color: white;
+    text-decoration: none;
+    
+}
+
+.icon1:hover {
+    transform: scale(1.2);
+    background-color: rgb(54, 52, 52);
+    font-weight: 900;
+}
+
+.icon2 {
+    text-align: center;
+    box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.605);
+    background-color: white;
+    width: 3.125vw;
+    height: 5.556vh;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(images/heart.svg);
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.6;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon2:hover {
+    transform: scale(1.05) translateY(-1.667vh);
+    opacity: 1;
+}
+.basicinfo{
+    width: 60%;
+    border-radius: 14px;
+    height: 15vh;
+    background-color: rgb(166, 161, 161);
+    border: 5px solid rgb(80, 78, 78);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pfp{
+    width:7vw;
+    height: 7vw;
+    border-radius: 50%;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.605);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png);
+}
+.basicinfo h1{
+    font-family: "Open Sans", sans-serif;
+    color: aliceblue;
+    font-size: clamp(10px,30px,50px);
+    font-weight: 600;
+    margin-left: 10px;
+}
+.basicinfo p{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(2, 255, 2);
+    font-weight: 400;
+    font-size: clamp(10px,20px,25px);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+label{
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+
+}
+#manageac{
+    width:5vw;
+    height: 5vw;
+    border-radius: 20px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.605);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://tse4.mm.bing.net/th/id/OIP.g5o2Odv6h0x3pG5XCPJr8AHaHa?r=0&pid=Api&h=220&P=0);
+
+}
+h3{
+    font-size: x-large;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(91, 90, 90);
+    
+}
+section{
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    width:clamp(36vw,12vw,12vw);
+    height:4vh;
+    border-radius: 20px;
+    margin-left: 3vw;
+    border: none;
+    background-color: rgb(23, 219, 82);
+    color: black;
+     font-family: "Open Sans", sans-serif;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.605);
+     font-weight: 700;
+    transition: 0.3s ease;
+}
+.button a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+
+   
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.background{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/067/185/644/large_2x/settings-panel-option-configuration-productivity-optimization-copy-space-banner-vector.jpg);
+    height: calc(88vh);
+}
+
+.footer {
+    width: 80vw;
+    background: #ffffff;
+    border-top: 1px solid #e8eee9;
+    padding: 55px 7vw 20px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 50px;
+}
+
+.footercontainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 45px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footerabout h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.footerabout h2 span {
+    color: #20a45a;
+}
+
+
+
+
+
+.footerabout p {
+    color: #858585;
+    line-height: 1.8;
+    max-width: 300px;
+    font-size: 14px;
+
+
+}
+
+
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.footerlinks h3 {
+    color: #222;
+    font-size: 17px;
+    margin-bottom: 8px;
+    
+}
+
+.footerlinks a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footerlinks a:hover {
+    color: #20a45a;
+    padding-left: 5px;
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+    .pfp{
+        display: none;
+    }
+    .footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footercontainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footerabout {
+        grid-column: span 2;
+    }
+
+
+}
+@media screen and (max-width: 768px) and (min-width: 300px){
+
+    
+         .icon2{
+            display: none;
+         }
+         .icon1{
+            width: 100%;
+         }
+
+         .basicinfo{
+            width: 97%;
+         }
+         
+         .logo1{
+            position: fixed;
+            margin-left:70%;
+            background-size: contain;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-top: 90%;}
+            
+     }
+@media  screen and (max-width:2560px) and (min-width:1024px){
+    .logo1{
+        background-size: contain;
+        background-color: white;
+    }
+    .navbar a{
+        font-size: 30px;
+    }
+    
+
+}

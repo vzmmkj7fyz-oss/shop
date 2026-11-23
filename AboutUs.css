@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+.tophead {
+  width: 100%;
+  height: 11.111vh;
+  background-color: rgb(7, 166, 7);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo1 {
+  border-radius: 0.875vw;
+  margin-left: -3.125vw;
+  margin-top: 2vh;
+  width: 30vw;
+  height: 8vh;
+  background-image: url(images/MYMAX.SHOP.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: idle 0.5s ease-in 1s 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.125vw;
+}
+
+nav a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: clamp(xx-small, 30px, 200px);
+  color: aliceblue;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.icons {
+  gap: 1.25vw;
+  display: flex;
+  margin-left: 6.25vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon1 {
+  font-family: "Shantell Sans", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 4.444vh;
+  background-color: black;
+  border-radius: 1.25vw;
+  box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.605);
+  transition: 0.3s ease;
+}
+
+.icon1 a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon1:hover {
+  transform: scale(1.2);
+  background-color: rgb(54, 52, 52);
+  font-weight: 900;
+}
+
+.icon2 {
+  text-align: center;
+  box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.605);
+  background-color: white;
+  width: 3.125vw;
+  height: 5.556vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/heart.svg);
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0.6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon2:hover {
+  transform: scale(1.05) translateY(-1.667vh);
+  opacity: 1;
+}
+
+.section1 {
+  transform: translateY(100px);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgba(255, 200, 151, 0.893);
+}
+.section1 h1 {
+  color: black;
+  font-weight: 900;
+}
+.section1 .btn {
+  margin-top: 20px;
+  width: 8vw;
+  height: 4vh;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(29, 7, 155);
+  color: aliceblue;
+  text-align: center;
+  font-size: large;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.605);
+  animation: idle 1s ease infinite;
+}
+.section1 .title {
+  transform: translate(8vw);
+}
+
+.section1 .pictures1 {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 60vh;
+  margin-left: 40vw;
+}
+.section1 .pictures1 .image1 {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://www.cgdirector.com/wp-content/uploads/media/2023/06/Acer-Laptops.jpg);
+}
+.section1 .pictures1 .image2 {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url(https://www.apple.com/v/iphone-17-pro/c/images/overview/welcome/hero__bdntboqignj6_xlarge.jpg);
+}
+
+@keyframes idle {
+  50% {
+    transform: translateY(5px);
+  }
+}
+.section2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btns {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 8vw;
+  height: 4vh;
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(29, 7, 155);
+  color: aliceblue;
+  text-align: center;
+  font-size: large;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.605);
+  animation: idle 1s ease infinite;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.s2h2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.s2h2 .card {
+  position: relative;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 20px;
+  border: 7px solid black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: float 1s ease forever;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: rotate(360deg);
+}
+
+#c4 {
+  margin-left: -5vw;
+  animation: float 1s ease forever;
+  background-image: url(https://clipart-library.com/2023/hand-drawn-happy-people-jumping_23-2149092878.jpg);
+}
+
+#c1 {
+  animation: float 1s ease forever;
+  background-image: url(https://img.freepik.com/premium-photo/man-holding-up-white-iphone-with-black-background_1092063-2815.jpg);
+}
+
+#c2 {
+  margin-left: -5vw;
+  animation: float 1s ease forever;
+  background-image: url(https://www.gadgetguy.com.au/wp-content/uploads/2023/07/Lenovo-Legion-Pro-7i-Gen-8-review-761x507.jpg);
+}
+
+#c3 {
+  margin-left: -5vw;
+  animation: float 1s ease forever;
+  background-image: url(https://thumbs.dreamstime.com/b/inside-contemporary-technology-store-sleek-displays-feature-laptops-smartphones-tablets-bright-lighting-highlights-367846296.jpg);
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4vw;
+  align-items: center;
+  height: 40vw;
+  width: 100%;
+  flex-direction: row;
+}
+
+.s32 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/premium-vector/people-shop-electronics-tech-convention_123891-165676.jpg);
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  opacity: 0.6;
+}
+
+#instagram {
+  background-image: url(https://s.yimg.com/zb/imgv1/e9d6381f-6a16-39d9-b6f9-1467838c022c/t_500x300);
+}
+
+#facebook {
+  background-image: url(https://tse4.mm.bing.net/th/id/OIP.-GaqWeEDxLikasVXJofOZwHaFb?r=0&pid=Api&h=220&P=0);
+}
+
+#tiktok {
+  background-image: url(https://tse4.mm.bing.net/th/id/OIP.hG2pQRJiUa9gxkLFPQy6tQHaHa?r=0&pid=Api&h=220&P=0);
+}
+
+.socials:hover {
+  transform: rotate(9deg) scale(1.1);
+  opacity: 1;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .s2h2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+  .s2h2 .card, .s2h2 #c4, .s2h2 #c2, .s2h2 #c3, .s2h2 #c1 {
+    width: 50vw;
+    margin-left: 0px;
+  }
+  .section1 .pictures1 {
+    display: none;
+  }
+  .btn1, .button, .section1 .title .btn {
+    width: 20vw;
+  }
+  .section2 {
+    margin-top: 20vh;
+  }
+  .categories {
+    display: none;
+  }
+}
+@media screen and (max-width: 2560px) and (min-width: 1024px) {
+  .logo1 {
+    background-size: contain;
+    background-color: white;
+  }
+  .navbar a {
+    font-size: 30px;
+  }
+  .bottomhead button {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon1 {
+    margin-right: 10vw;
+  }
+  .icon2 {
+    display: none;
+  }
+  .icon1 {
+    width: 100%;
+  }
+  .logo1 {
+    position: fixed;
+    margin-left: 70%;
+    background-size: contain;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 90%;
+  }
+  .section2 {
+    margin-top: 60vh;
+  }
+  .section3 {
+    display: none;
+  }
+  .title h1 {
+    font-size: x-large;
+  }
+  .pics {
+    margin-top: 200px;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pics .pic {
+    width: 45vw;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.605);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s ease-in;
+  }
+  .pics .pic:hover {
+    transform: scale(1.1) rotate(9deg);
+  }
+  .pics #pic1 {
+    background-image: url(https://img.etimg.com/photo/msid-96239092/Group%20buying.jpg);
+  }
+  .pics #pic2 {
+    background-size: contain;
+    background-image: url(https://pixpretty-images.tenorshare.ai/article/editing/best-products-to-sell.jpg);
+  }
+}
+@media screen and (max-width: 425px) {
+  .section1 {
+    background-color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=aboutus.css.map */

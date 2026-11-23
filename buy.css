@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+
+    min-height: 100vh;
+    background: linear-gradient(to bottom left, #159447, #292929 80%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+form{
+
+    width: 450px;
+    max-width: 100%;
+    background: rgba(30, 30, 30, 0.85);
+    padding: 25px;
+    border: 2px solid #159447;
+    border-radius: 20px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#productimg{
+    width: 100%;
+    height: 30vw;
+    max-height: 350px;
+    min-height: 200px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #159447;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+p a{
+    color: #38d879;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+p a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.inputbox{
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+input, select{
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: 2px solid green;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+input:focus, select:focus{
+    border-color: #38d879;
+    box-shadow: 0 0 15px rgba(21, 148, 71, 0.6);
+    background-color: #414141;
+}
+
+select option{
+    background-color: #353535;
+    color: white;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: #159447;
+    color: white;
+    border: 2px solid #159447;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #107537;
+    box-shadow: 0 0 20px rgba(21, 148, 71, 0.7);
+    transform: translateY(-2px);
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 15px;
+    }
+
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+    #productimg{
+        height: 60vw;
+    }
+
+}

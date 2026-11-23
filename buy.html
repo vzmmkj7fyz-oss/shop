@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+
+    <form action="require">
+
+        <img src="images/MYMAX.SHOP.png" alt="ვერ მოიძებნქ" id="productimg">
+
+        <p>პროდუქტის შესახებ იხილეთ 
+            <a href="product.html">ამ გვერდზე</a>
+           </p>
+
+        <div class="inputbox">
+         <label for="address">მისამართი</label>
+            <input type="text" id="address" placeholder="შეიყვანეთ მისამართი..." required>
+        </div>
+
+        <div class="inputbox">
+            <label for="cities">ქალაქი</label>
+            <select name="city" id="cities" required>
+                <option value="" disabled selected>აირჩიეთ ქალაქი</option>
+                <option value="tbilisi">თბილისი</option>
+                <option value="rustavi">რუსთავი</option>
+                <option value="mtsketa">მცხეთა</option>
+                <option value="batumi">ბათუმი</option>
+                <option value="kutaisi">ქუთაისი</option>
+            </select>
+        </div>
+
+        <div class="inputbox">
+
+
+            <label for="phone">ტელეფონის ნომერი</label>
+            <input type="tel" id="phone" maxlength="9" placeholder="5XXXXXXXX" required>
+        </div>
+
+        <div class="inputbox">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+
+        </div>
+
+        <button type="submit">შეკვეთა</button>
+
+    </form>
+
+</body>
+</html>
